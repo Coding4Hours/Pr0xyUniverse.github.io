@@ -11731,7 +11731,7 @@
                                 return p().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.next = 2, fetch("/api/generateSessionId");
+                                            return e.next = 2, fetch("https://browser.rammerhead.orghttps://browser.rammerhead.org/api/generateSessionId", { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 2:
                                             return e.next = 4, e.sent.json();
                                         case 4:
@@ -11741,7 +11741,7 @@
                                                 e.next = 21;
                                                 break
                                             }
-                                            return e.next = 14, fetch("/api/generateSession");
+                                            return e.next = 14, fetch("https://browser.rammerhead.orghttps://browser.rammerhead.org/api/generateSessionId", { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 14:
                                             return e.next = 16, e.sent.json();
                                         case 16:
@@ -11769,7 +11769,7 @@
                                                 e.next = 46;
                                                 break
                                             }
-                                            return e.next = 37, fetch("/api/generateSessionId?id=" + n);
+                                            return e.next = 37, fetch("https://browser.rammerhead.orghttps://browser.rammerhead.org/api/generateSessionId?id=" + n, { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 37:
                                             return e.next = 39, e.sent.json();
                                         case 39:
@@ -11793,15 +11793,15 @@
                                                 return f.synchronousClose()
                                             })), localStorage.setItem("rhdatabase-" + this.id, this.db.name), this.updateAliveSessionId(), this.updateAliveId = setInterval((function() {
                                                 return f.updateAliveSessionId()
-                                            }), 5e3), this.cleanupStaleSessionIds(), e.next = 56, fetch("/CHANGELOG.md");
+                                            }), 5e3), this.cleanupStaleSessionIds(), e.next = 56, fetch("https://browser.rammerhead.org/CHANGELOG.md");
                                         case 56:
                                             return e.next = 58, e.sent.text();
                                         case 58:
-                                            return e.t0 = e.sent, e.next = 61, fetch("/version");
+                                            return e.t0 = e.sent, e.next = 61, fetch("https://browser.rammerhead.org/version");
                                         case 61:
                                             return e.next = 63, e.sent.text();
                                         case 63:
-                                            return e.t1 = e.sent, e.next = 66, fetch("/version-opensource");
+                                            return e.t1 = e.sent, e.next = 66, fetch("https://browser.rammerhead.org/version-opensource");
                                         case 66:
                                             return e.next = 68, e.sent.text();
                                         case 68:
@@ -11849,7 +11849,7 @@
                                             }
                                             return e.abrupt("return", "must specify code");
                                         case 2:
-                                            return e.next = 4, fetch("/api/alienhubProxyChallenge?id=".concat(this.id, "&code=").concat(t));
+                                            return e.next = 4, fetch("https://browser.rammerhead.orghttps://browser.rammerhead.org/api/alienhubProxyChallenge?id=".concat(this.id, "&code=").concat(t), { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 4:
                                             return e.next = 6, e.sent.text();
                                         case 6:
@@ -11947,13 +11947,13 @@
                                 return p().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return this.syncCount++, e.next = 3, fetch("/api/sessionStatus?id=" + encodeURIComponent(this.id));
+                                            return this.syncCount++, e.next = 3, fetch("https://browser.rammerhead.orghttps://browser.rammerhead.org/api/sessionStatus?id=" + encodeURIComponent(this.id));
                                         case 3:
                                             if (e.t0 = e.sent.status, 404 !== e.t0) {
                                                 e.next = 21;
                                                 break
                                             }
-                                            return e.t1 = fetch, e.t2 = "/api/uploadSession?id=".concat(encodeURIComponent(this.id), "&signedId=").concat(encodeURIComponent(this.signedId), "&signed="), e.t3 = encodeURIComponent, e.next = 10, this.getSessionSignature();
+                                            return e.t1 = fetch, e.t2 = "https://browser.rammerhead.orghttps://browser.rammerhead.org/api/uploadSession?id=".concat(encodeURIComponent(this.id), "&signedId=").concat(encodeURIComponent(this.signedId), "&signed="), e.t3 = encodeURIComponent, e.next = 10, this.getSessionSignature();
                                         case 10:
                                             return e.t4 = e.sent, e.t5 = (0, e.t3)(e.t4), e.t6 = e.t2.concat.call(e.t2, e.t5), e.next = 15, this.getSessionData();
                                         case 15:
@@ -11969,7 +11969,7 @@
                                                 e.next = 33;
                                                 break
                                             }
-                                            return e.next = 24, fetch("/api/getSession?id=".concat(encodeURIComponent(this.id), "&signedId=").concat(encodeURIComponent(this.signedId)));
+                                            return e.next = 24, fetch("https://browser.rammerhead.org/api/getSession?id=".concat(encodeURIComponent(this.id), "&signedId=").concat(encodeURIComponent(this.signedId)), { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 24:
                                             if (200 !== (n = e.sent).status) {
                                                 e.next = 33;
@@ -12001,7 +12001,7 @@
                                                 e.next = 7;
                                                 break
                                             }
-                                            return e.next = 5, fetch("/api/configShuffling?id=".concat(encodeURIComponent(this.id), "&enable=true&reshuffle=true"));
+                                            return e.next = 5, fetch("https://browser.rammerhead.org/api/configShuffling?id=".concat(encodeURIComponent(this.id), { "headers": { "enable": true, "reshuffle":true, "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 5:
                                             return e.next = 7, this.syncSession(!0);
                                         case 7:
@@ -12466,7 +12466,7 @@
                                             }
                                             throw new TypeError("enable argument must be a boolean");
                                         case 2:
-                                            return e.next = 4, fetch("/api/configShuffling?id=".concat(encodeURIComponent(this.id), "&enable=").concat(t));
+                                            return e.next = 4, fetch("https://browser.rammerhead.org/api/configShuffling?id=".concat(encodeURIComponent(this.id), "&enable=").concat(t), { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
                                         case 4:
                                             return e.next = 6, this.syncSession(!0);
                                         case 6:
@@ -12506,7 +12506,7 @@
                                 return p().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.next = 2, fetch("/api/configProxy?id=".concat(encodeURIComponent(this.id)) + (t ? "&httpProxy=" + encodeURIComponent(t) : ""));
+                                            return e.next = 2, fetch("https://browser.rammerhead.org/api/configProxy?id=".concat(encodeURIComponent(this.id)) + (t ? "&httpProxy=" + encodeURIComponent(t) : ""), { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit"});
                                         case 2:
                                             return e.next = 4, this.syncSession(!0);
                                         case 4:
@@ -12553,9 +12553,11 @@
                                             }
                                             return e.abrupt("return", "session data missing");
                                         case 15:
-                                            return e.next = 17, fetch("/api/validateSession?signed=" + encodeURIComponent(i.sessionDataSignature.signature), {
-                                                method: "POST",
-                                                body: i.sessionData.sessionData
+                                            return e.next = 17, fetch("https://browser.rammerhead.org/api/validateSession?signed=" + encodeURIComponent(i.sessionDataSignature.signature), {
+                                                "method": "POST",
+                                                "body": i.sessionData.sessionData,
+                                                "accept": "*/*",
+                                                "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "mode": "cors", "credentials": "omit"
                                             });
                                         case 17:
                                             return e.next = 19, e.sent.text();
@@ -12861,7 +12863,7 @@
                                             t.next = 16;
                                             break
                                         }
-                                        return t.next = 12, fetch("/api/check-ah-domain");
+                                        return t.next = 12, fetch("https://browser.rammerhead.org/api/check-ah-domain");
                                     case 12:
                                         return t.next = 14, t.sent.text();
                                     case 14:
