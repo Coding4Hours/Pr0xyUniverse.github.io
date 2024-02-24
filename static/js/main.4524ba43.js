@@ -12001,7 +12001,7 @@
                                                 e.next = 7;
                                                 break
                                             }
-                                            return e.next = 5, fetch("https://browser.rammerhead.org/api/configShuffling?id=".concat(encodeURIComponent(this.id), { "headers": { "enable": true, "reshuffle":true, "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" });
+                                            return e.next = 5, fetch("https://browser.rammerhead.org/api/configShuffling?id=".concat(encodeURIComponent(this.id), { "headers": { "enable": true, "reshuffle":true, "accept": "*/*", "accept-language": "en-US,en;q=0.9", "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"", "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": "\"Windows\"", "sec-fetch-dest": "empty", "sec-fetch-mode": "cors", "sec-fetch-site": "same-origin", "sec-gpc": "1" }, "referrer": "https://browser.rammerhead.org/", "referrerPolicy": "strict-origin-when-cross-origin", "body": null, "method": "GET", "mode": "cors", "credentials": "omit" }));
                                         case 5:
                                             return e.next = 7, this.syncSession(!0);
                                         case 7:
